@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="720" viewBox="0 0 1280 720">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="623" height="413" viewBox="0 0 623 413">
   <defs>
     <clipPath id="clip-Custom_Size_1">
-      <rect width="1280" height="720"/>
+      <rect width="623" height="413"/>
     </clipPath>
   </defs>
   <g id="Custom_Size_1" data-name="Custom Size – 1" clip-path="url(#clip-Custom_Size_1)">
-    <text id="DA_SILVA_CARS" data-name="DA SILVA CARS" transform="translate(344.656 547.664)" font-size="80" font-family="JosefinSans-Bold, Josefin Sans" font-weight="700"><tspan x="0" y="0">DA SILVA CARS</tspan></text>
-    <line id="Line_1" data-name="Line 1" x2="584" transform="translate(344 432.664)" fill="none" stroke="#000" stroke-width="1"/>
-    <g id="car" transform="translate(337.344 -3.626)">
+    <text id="DA_SILVA_CARS" data-name="DA SILVA CARS" transform="translate(16.656 402.664)" font-size="80" font-family="JosefinSans-Bold, Josefin Sans" font-weight="700"><tspan x="0" y="0">DA SILVA CARS</tspan></text>
+    <line id="Line_1" data-name="Line 1" x2="584" transform="translate(16 287.664)" fill="none" stroke="#000" stroke-width="1"/>
+    <g id="car" transform="translate(9.344 -148.626)">
       <g id="Group_2" data-name="Group 2" transform="translate(83.998 155.962)">
         <g id="Group_1" data-name="Group 1">
           <path id="Path_1" data-name="Path 1" d="M584.514,279.369l-18.666-28a4.677,4.677,0,0,0-2.98-1.991L425.444,222.364c-9.99-7.164-95.208-66.4-180.8-66.4-81.034,0-130.625,15.248-140.022,18.405l-26.5-8.831a4.665,4.665,0,0,0-2.953,8.85l28,9.334a4.723,4.723,0,0,0,3.068-.036c.51-.187,51.737-18.388,138.4-18.388,86.065,0,175.247,64.561,176.132,65.213a4.738,4.738,0,0,0,1.86.816l136.522,26.841,16.806,25.206V333.29c0,.036-.064,3.645-5.587,4.757-7.126,1.422-39.327,3.629-55.359,4.586a4.667,4.667,0,0,0,.282,9.325,2.415,2.415,0,0,0,.285-.012c1.913-.118,47.093-2.834,56.635-4.749,10.345-2.077,13.079-10.007,13.079-13.908V281.958A4.668,4.668,0,0,0,584.514,279.369Z" transform="translate(-71.984 -155.962)"/>
