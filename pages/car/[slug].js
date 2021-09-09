@@ -79,7 +79,7 @@ export default function carDetails() {
 					<div>
 						<div className="space-y-4">
 							<div>
-								<div className="flex">
+								<div className="flex ">
 									<span className="font-black text-2xl">
 										${car.price.toFixed(2)}/
 									</span>
@@ -111,10 +111,12 @@ export default function carDetails() {
 									</div>
 								</div>
 							</div>
-							<div>
-								<p className="font-bold text-lg text-red-700">
-									For more details contact us on: +250 787 811 900
-								</p>
+							<div className="flex flex-wrap">
+								<p className="mr-2">For more info contact us on </p>
+								<a href="tel:+250787811900" className="font-semibold">
+									{" "}
+									+250 787 811 900
+								</a>
 							</div>
 						</div>
 					</div>

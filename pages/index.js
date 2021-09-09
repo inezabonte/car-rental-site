@@ -34,7 +34,7 @@ export default function Home() {
 	return (
 		<Layout>
 			<Header />
-			<main className="p-4 max-w-md md:max-w-7xl  m-auto">
+			<main className="p-4 max-w-md md:max-w-7xl  mx-auto mt-6">
 				<div className="grid grid-cols-1 md:grid-cols-3  gap-6 place-content-center">
 					{cars.map((car) => (
 						<div key={car.slug} className="bg-white rounded shadow">
