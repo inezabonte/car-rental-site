@@ -7,6 +7,7 @@ import { BiGasPump } from "react-icons/bi";
 import { HiOutlineUserGroup } from "react-icons/hi";
 import Loading from "@/components/Loading";
 import Link from "next/link";
+import Header from "@/components/Header";
 
 export default function Home() {
 	const fetcher = async () => {
@@ -32,6 +33,7 @@ export default function Home() {
 
 	return (
 		<Layout>
+			<Header />
 			<main className="p-4 max-w-md md:max-w-7xl  m-auto">
 				<div className="grid grid-cols-1 md:grid-cols-3  gap-6 place-content-center">
 					{cars.map((car) => (
