@@ -9,6 +9,7 @@ import { Badge } from "@chakra-ui/react";
 import { BiGasPump } from "react-icons/bi";
 import { HiOutlineUserGroup } from "react-icons/hi";
 import Link from "next/link";
+import Header from "@/components/Header";
 
 export default function carDetails() {
 	const router = useRouter();
@@ -42,9 +43,10 @@ export default function carDetails() {
 
 	return (
 		<Layout>
+			<Header title={car.name} />
 			<main className="m-auto max-w-7xl space-y-6 p-2">
 				<Link href="/">
-					<a className="text-blue-500 underline">← Home</a>
+					<a className="text-blue-600 underline">← Home</a>
 				</Link>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 place-content-center gap-6 bg-white p-6">
@@ -77,7 +79,7 @@ export default function carDetails() {
 					<div>
 						<div className="space-y-4">
 							<div>
-								<div className="flex">
+								<div className="flex ">
 									<span className="font-black text-2xl">
 										${car.price.toFixed(2)}/
 									</span>
@@ -109,10 +111,12 @@ export default function carDetails() {
 									</div>
 								</div>
 							</div>
-							<div>
-								<p className="font-bold text-lg text-red-700">
-									Contact us on: +250 787 811 900
-								</p>
+							<div className="flex flex-wrap">
+								<p className="mr-2">For more info contact us on </p>
+								<a href="tel:+250787811900" className="font-semibold">
+									{" "}
+									+250 787 811 900
+								</a>
 							</div>
 						</div>
 					</div>
