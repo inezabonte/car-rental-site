@@ -14,8 +14,8 @@ export default function carDetails() {
 
 	const [currentImage, setCurrentImage] = useState(0);
 
-	const fetcher = async (id) => {
-		const data = await getSingleCar(id);
+	const fetcher = async () => {
+		const data = await getSingleCar(slug);
 		console.log(data);
 
 		return data;
@@ -24,7 +24,7 @@ export default function carDetails() {
 	function useSingleCars() {
 		const { data, error } = useSWR(
 			slug ? `/api/getCars?slug=${slug}` : null,
-			fetcher(slug)
+			fetcher
 		);
 		return {
 			cars: data,
