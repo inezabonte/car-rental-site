@@ -10,6 +10,7 @@ import { BiGasPump } from "react-icons/bi";
 import { HiOutlineUserGroup } from "react-icons/hi";
 import Link from "next/link";
 import Header from "@/components/Header";
+import BookingForm from "@/components/BookingForm";
 
 export default function carDetails() {
 	const router = useRouter();
@@ -49,7 +50,7 @@ export default function carDetails() {
 					<a className="text-blue-600 underline">← Home</a>
 				</Link>
 
-				<div className="grid grid-cols-1 md:grid-cols-2 place-content-center gap-6 bg-white p-6">
+				<div className="grid grid-cols-1 md:grid-cols-2 place-content-center gap-6 bg-white p-4 md:p-6">
 					<div className="space-y-6">
 						<h1 className="text-3xl font-bold">{car.name}</h1>
 						<div>
@@ -118,6 +119,7 @@ export default function carDetails() {
 									+250 787 811 900
 								</a>
 							</div>
+							<BookingForm carName={car.name} />
 						</div>
 					</div>
 				</div>
