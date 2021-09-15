@@ -6,11 +6,10 @@ import useSWR from "swr";
 import { getSingleCar } from "lib/api";
 import { useState } from "react";
 import { Badge } from "@chakra-ui/react";
-import { BiGasPump } from "react-icons/bi";
-import { HiOutlineUserGroup } from "react-icons/hi";
 import Link from "next/link";
 import Header from "@/components/Header";
 import BookingForm from "@/components/BookingForm";
+import { RiInformationFill } from "react-icons/ri";
 
 export default function carDetails() {
 	const router = useRouter();
@@ -95,20 +94,44 @@ export default function carDetails() {
 									{car.available ? "Available" : "Rented"}
 								</Badge>
 							</div>
-							<div className="text-gray-500">
-								<span className="text-xl font-bold ">Features</span>
-								<div className="flex space-x-4">
+							<div>
+								<span className="text-lg font-bold ">Features</span>
+								<div className="flex flex-col">
 									<div className="flex items-center space-x-2">
-										<HiOutlineUserGroup className="w-6 h-6" />
-										<span className="text-lg font-medium text-black">
-											{car.seats}
+										<span>Seats: </span>
+										<span className="font-medium text-black">{car.seats}</span>
+									</div>
+									<div className="flex items-center space-x-2">
+										<span>Fuel: </span>
+										<span className="font-medium text-black capitalize">
+											{car.fuel}
 										</span>
 									</div>
 									<div className="flex items-center space-x-2">
-										<BiGasPump className="w-6 h-6" />
-										<span className="text-lg font-medium text-black capitalize">
-											{car.fuel}
+										<span>Transmission: </span>
+										<span className="font-medium text-black capitalize">
+											{car.transmission}
 										</span>
+									</div>
+								</div>
+							</div>
+							<div className="space-y-2 bg-blue-100 rounded p-2">
+								<div className="flex text-blue-600 items-center">
+									<RiInformationFill className="w-5 h-5" />
+									<span className="font-bold text-sm">Caution Fee</span>
+								</div>
+								<div className="flex space-x-4">
+									<div className="flex flex-col">
+										<span className="font-medium text-gray-600 text-sm">
+											1 day
+										</span>
+										<span className="font-semibold">$100.00</span>
+									</div>
+									<div className="flex flex-col">
+										<span className="font-medium text-sm text-gray-600">
+											More days
+										</span>
+										<span className="font-semibold">$200.00</span>
 									</div>
 								</div>
 							</div>
