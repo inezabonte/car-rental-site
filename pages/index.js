@@ -3,8 +3,7 @@ import useSWR from "swr";
 import axios from "axios";
 import Image from "next/image";
 import { Badge } from "@chakra-ui/react";
-import { BiGasPump } from "react-icons/bi";
-import { HiOutlineUserGroup } from "react-icons/hi";
+import { RiInformationFill } from "react-icons/ri";
 import Loading from "@/components/Loading";
 import Link from "next/link";
 import Header from "@/components/Header";
@@ -48,29 +47,34 @@ export default function Home() {
 										{car.available ? "Available" : "Rented"}
 									</Badge>
 								</div>
-								<div className="text-gray-500">
-									<span className="text-xs font-medium ">Features</span>
+								<div className="space-y-2 bg-blue-100 rounded p-2">
+									<div className="flex text-blue-600 items-center">
+										<RiInformationFill className="w-5 h-5" />
+										<span className="font-bold text-sm">Caution Fee</span>
+									</div>
 									<div className="flex space-x-4">
-										<div className="flex items-center space-x-2">
-											<HiOutlineUserGroup />
-											<span className="text-xs font-medium text-black">
-												{car.seats}
+										<div className="flex flex-col">
+											<span className="font-medium text-gray-600 text-sm">
+												1 day
 											</span>
+											<span className="font-semibold">$100.00</span>
 										</div>
-										<div className="flex items-center space-x-2">
-											<BiGasPump />
-											<span className="text-xs font-medium text-black capitalize">
-												{car.fuel}
+										<div className="flex flex-col">
+											<span className="font-medium text-sm text-gray-600">
+												More days
 											</span>
+											<span className="font-semibold">$200.00</span>
 										</div>
 									</div>
 								</div>
 								<div className="flex justify-between">
 									<div className="flex flex-col">
-										<span className="font-bold text-lg">
+										<span className="font-bold text-xl">
 											${car.price.toFixed(2)}
 										</span>
-										<span className="text-xs text-gray-500">per day</span>
+										<span className="text-sm text-gray-600 font-bold">
+											per day
+										</span>
 									</div>
 									<Link href={`/car/${car.slug}`}>
 										<a className="bg-red-600 px-2 rounded text-white text-sm font-black flex items-center uppercase">
