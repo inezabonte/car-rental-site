@@ -27,19 +27,17 @@ export default function Navbar() {
 				</div>
 			</div>
 			<div className="flex justify-center mt-4 space-x-4">
-				<a
-					href="/"
-					className="bg-purple-200 p-2 rounded font-semibold text-purple-900"
-				>
-					Cars for rent
-				</a>
+				<Link href="/">
+					<a className="bg-purple-200 p-2 rounded font-semibold text-purple-900">
+						Cars for rent
+					</a>
+				</Link>
 
-				<a
-					href="/buy-car"
-					className="bg-purple-200 p-2 rounded font-semibold text-purple-900"
-				>
-					Cars for sale
-				</a>
+				<Link href="/buy-car">
+					<a className="bg-purple-200 p-2 rounded font-semibold text-purple-900">
+						Cars for sale
+					</a>
+				</Link>
 			</div>
 		</div>
 	);
