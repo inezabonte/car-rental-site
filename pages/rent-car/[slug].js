@@ -3,10 +3,9 @@ import Image from "next/image";
 import Loading from "@/components/Loading";
 import { useRouter } from "next/router";
 import useSWR from "swr";
-import { getSingleCar } from "lib/api";
+import { getSingleRentCar } from "lib/api";
 import { useState } from "react";
 import { Badge } from "@chakra-ui/react";
-import Link from "next/link";
 import Header from "@/components/Header";
 import BookingForm from "@/components/BookingForm";
 import { RiInformationFill } from "react-icons/ri";
@@ -18,14 +17,14 @@ export default function carDetails() {
 	const [currentImage, setCurrentImage] = useState(0);
 
 	const fetcher = async () => {
-		const data = await getSingleCar(slug);
+		const data = await getSingleRentCar(slug);
 
 		return data[0];
 	};
 
 	function useSingleCars() {
 		const { data, error } = useSWR(
-			slug ? `/api/getCars?slug=${slug}` : null,
+			slug ? `/api/get-cars?slug=${slug}` : null,
 			fetcher
 		);
 		return {
@@ -45,10 +44,6 @@ export default function carDetails() {
 		<Layout>
 			<Header title={car.name} />
 			<main className="m-auto max-w-7xl space-y-6 p-2">
-				<Link href="/">
-					<a className="text-blue-600 underline">← Home</a>
-				</Link>
-
 				<div className="grid grid-cols-1 md:grid-cols-2 place-content-center gap-6 bg-white p-4 md:p-6">
 					<div className="space-y-6">
 						<h1 className="text-3xl font-bold">{car.name}</h1>
