@@ -10,7 +10,7 @@ import Header from "@/components/Header";
 
 export default function Home() {
 	const fetcher = async () => {
-		const { data } = await axios.get("api/getCars");
+		const { data } = await axios.get("api/get-cars?q=rent");
 
 		return data;
 	};
@@ -42,7 +42,7 @@ export default function Home() {
 							</div>
 							<div className="p-4 space-y-4">
 								<div>
-									<h2 className="text-lg font-bold">{car.name}</h2>
+									<h2 className="text-lg font-semibold">{car.name}</h2>
 									<Badge colorScheme={car.available ? "green" : "orange"}>
 										{car.available ? "Available" : "Rented"}
 									</Badge>
@@ -76,7 +76,7 @@ export default function Home() {
 											per day
 										</span>
 									</div>
-									<Link href={`/car/${car.slug}`}>
+									<Link href={`/rent-car/${car.slug}`}>
 										<a className="bg-red-600 px-2 rounded text-white text-sm font-black flex items-center uppercase">
 											Book Now
 										</a>

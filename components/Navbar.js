@@ -5,19 +5,41 @@ import { IoIosCall } from "react-icons/io";
 
 export default function Navbar() {
 	return (
-		<div className="p-4 bg-black">
-			<div className="flex items-center justify-center  md:justify-between max-w-7xl m-auto">
-				<Link href="/">
-					<a className="w-48 ">
-						<Image src={logo} width={484} height={61} className="text-white" />
-					</a>
-				</Link>
-				<div className="text-white md:flex items-center space-x-2 p hidden">
-					<IoIosCall className="w-6 h-6" />
-					<a href="tel:+250787811900" className="font-bold">
-						+250 787 811 900
-					</a>
+		<div>
+			<div className="p-4 bg-black">
+				<div className="flex items-center justify-center  md:justify-between max-w-7xl m-auto">
+					<Link href="/">
+						<a className="w-48 ">
+							<Image
+								src={logo}
+								width={484}
+								height={61}
+								className="text-white"
+							/>
+						</a>
+					</Link>
+					<div className="text-white md:flex items-center space-x-2 p hidden">
+						<IoIosCall className="w-6 h-6" />
+						<a href="tel:+250787811900" className="font-bold">
+							+250 787 811 900
+						</a>
+					</div>
 				</div>
+			</div>
+			<div className="flex justify-center mt-4 space-x-4">
+				<a
+					href="/"
+					className="bg-purple-200 p-2 rounded font-semibold text-purple-900"
+				>
+					Cars for rent
+				</a>
+
+				<a
+					href="/buy-car"
+					className="bg-purple-200 p-2 rounded font-semibold text-purple-900"
+				>
+					Cars for sale
+				</a>
 			</div>
 		</div>
 	);
