@@ -103,5 +103,6 @@ export async function getStaticProps() {
 				"/api/get-cars?q=rent": cars,
 			},
 		},
+		revalidate: 1,
 	};
 }
