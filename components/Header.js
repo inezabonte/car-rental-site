@@ -13,6 +13,7 @@ export default function Header({ title }) {
 			<meta property="og:title" content={title ? title : "Da Silva Cars"} />
 			<meta property="og:image" content={coverImage} />
 			<meta property="og:description" content={description} />
+			<meta name="description" content={description} />
 			<meta property="og:image:width" content="1200" />
 			<meta property="og:image:height" content="630" />
 			<meta name="twitter:card" content="summary_large_image" />
