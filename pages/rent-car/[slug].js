@@ -145,7 +145,7 @@ export default function carDetails({ fallback }) {
 									<p className="mr-2">For more info contact us on </p>
 									<a href="tel:+250787811900" className="font-semibold">
 										{" "}
-										+250 787 811 900
+										(999) 999-9999
 									</a>
 								</div>
 								<BookingForm carName={car.name} />

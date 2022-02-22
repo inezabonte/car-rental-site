@@ -39,7 +39,7 @@ export default function Navbar() {
 				<div className="text-white md:flex items-center space-x-2 p hidden">
 					<IoIosCall className="w-6 h-6" />
 					<a href="tel:+250787811900" className="font-bold">
-						+250 787 811 900
+						(999) 999-9999
 					</a>
 				</div>
 			</div>

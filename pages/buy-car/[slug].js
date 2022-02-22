@@ -121,7 +121,7 @@ export default function carDetails({ fallback }) {
 										<div className="flex space-x-2 items-center">
 											<IoIosCall className="w-5 h-5" />
 											<a href="tel:+250787811900" className="font-semibold">
-												+250 787 811 900
+												(999) 999-9999
 											</a>
 										</div>
 										<div className="flex space-x-2 items-center">
@@ -130,7 +130,7 @@ export default function carDetails({ fallback }) {
 												href="mailto:dasilvacarsrw@gmail.com"
 												className="font-semibold"
 											>
-												dasilvacarsrw@gmail.com
+												dasilvacars@gmail.com
 											</a>
 										</div>
 									</div>
