@@ -7,7 +7,6 @@ import { getSingleRentCar, getCarsSlugs } from "lib/api";
 import { useState } from "react";
 import { Badge } from "@chakra-ui/react";
 import Header from "@/components/Header";
-import BookingForm from "@/components/BookingForm";
 import { RiInformationFill } from "react-icons/ri";
 
 export default function carDetails({ fallback }) {
@@ -148,7 +147,6 @@ export default function carDetails({ fallback }) {
 										(999) 999-9999
 									</a>
 								</div>
-								<BookingForm carName={car.name} />
 							</div>
 						</div>
 					</div>
