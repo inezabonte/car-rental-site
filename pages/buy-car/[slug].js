@@ -130,7 +130,7 @@ export default function carDetails({ fallback }) {
 												href="mailto:dasilvacarsrw@gmail.com"
 												className="font-semibold"
 											>
-												dasilvacars@gmail.com
+												sales@dasilvacarsrw.com
 											</a>
 										</div>
 									</div>

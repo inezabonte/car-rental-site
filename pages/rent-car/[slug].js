@@ -9,7 +9,7 @@ import { Badge } from "@chakra-ui/react";
 import Header from "@/components/Header";
 import { RiInformationFill } from "react-icons/ri";
 
-export default function carDetails({ fallback }) {
+export default function CarDetails({ fallback }) {
 	const router = useRouter();
 	const { slug } = router.query;
 
